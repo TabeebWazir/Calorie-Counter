@@ -6,3 +6,7 @@ const clearButton = document.getElementById("clear");
 const output = document.getElementById("output");
 
 let isError = false;
+
+const cleanInputString = (str) => {
+  const strArray = str.split("");
+};
