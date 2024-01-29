@@ -8,5 +8,5 @@ const output = document.getElementById("output");
 let isError = false;
 
 const cleanInputString = (str) => {
-  const regex = /[+-\s]/;
+  const regex = /[+-\s]/g;
 };
