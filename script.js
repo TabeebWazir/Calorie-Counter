@@ -10,4 +10,7 @@ let isError = false;
 const cleanInputString = (str) => {
   const strArray = str.split("");
   const cleanStrArray = [];
+  for (let i = 0; i < strArray.length; i++) {
+    strArray[i];
+  }
 };
