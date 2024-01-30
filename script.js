@@ -11,3 +11,5 @@ const cleanInputString = (str) => {
   const regex = /[+-\s]/g;
   return str.replace(regex, "");
 };
+
+const isInvalidInput = (str) => {};
