@@ -9,4 +9,5 @@ let isError = false;
 
 const cleanInputString = (str) => {
   const regex = /[+-\s]/g;
+  return str.replace(regex, "");
 };
