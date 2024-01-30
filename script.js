@@ -12,4 +12,6 @@ const cleanInputString = (str) => {
   return str.replace(regex, "");
 };
 
-const isInvalidInput = (str) => {};
+const isInvalidInput = (str) => {
+  const regex = /e/;
+};
