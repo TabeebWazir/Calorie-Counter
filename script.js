@@ -17,4 +17,6 @@ const isInvalidInput = (str) => {
   return str.match(regex);
 };
 
-const addEntry = () => {};
+const addEntry = () => {
+  const targetId = "#" + entryDropdown.value;
+};
