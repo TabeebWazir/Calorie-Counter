@@ -13,5 +13,5 @@ const cleanInputString = (str) => {
 };
 
 const isInvalidInput = (str) => {
-  const regex = /e/;
+  const regex = /e/i;
 };
