@@ -31,4 +31,6 @@ function addEntry() {
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
+const getCaloriesFromInputs = (list) => {};
+
 addEntryButton.addEventListener("click", addEntry);
