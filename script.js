@@ -69,6 +69,9 @@ const calculateCalories = (e) => {
 
   const consumedCalories =
     breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+
+  const remainingCalories =
+    budgetCalories - consumedCalories + exerciseCalories;
 };
 
 const getCaloriesFromInputs = (list) => {
