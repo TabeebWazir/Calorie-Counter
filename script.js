@@ -75,6 +75,7 @@ function calculateCalories(e) {
   <span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(
     remainingCalories
   )} Calorie ${surplusOrDeficit}</span>
+  <hr>
   `;
 }
 
