@@ -72,7 +72,9 @@ function calculateCalories(e) {
   `;
 
   output.innerHTML = `
-  <span class="${surplusOrDeficit.toLowerCase()}">${remainingCalories} Calorie ${surplusOrDeficit}</span>
+  <span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(
+    remainingCalories
+  )} Calorie ${surplusOrDeficit}</span>
   `;
 }
 
