@@ -76,6 +76,7 @@ function calculateCalories(e) {
     remainingCalories
   )} Calorie ${surplusOrDeficit}</span>
   <hr>
+  <p>${budgetCalories} Calories Budgeted</p>
   `;
 }
 
