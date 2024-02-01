@@ -72,6 +72,8 @@ const calculateCalories = (e) => {
 
   const remainingCalories =
     budgetCalories - consumedCalories + exerciseCalories;
+
+  const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
 };
 
 const getCaloriesFromInputs = (list) => {
