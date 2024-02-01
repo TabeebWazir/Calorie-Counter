@@ -31,7 +31,10 @@ function addEntry() {
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
-const calculateCalories = (e) => {};
+const calculateCalories = (e) => {
+  e.preventDefault();
+  isError = false;
+};
 
 const getCaloriesFromInputs = (list) => {
   let calories = 0;
