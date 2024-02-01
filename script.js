@@ -56,6 +56,7 @@ const calculateCalories = (e) => {
   );
 
   const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
+  const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
 };
 
 const getCaloriesFromInputs = (list) => {
