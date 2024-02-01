@@ -75,7 +75,7 @@ const calculateCalories = (e) => {
 
   const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
 
-  output.innerHTML = ``;
+  output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}"></span>`;
 };
 
 const getCaloriesFromInputs = (list) => {
