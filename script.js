@@ -31,26 +31,22 @@ function addEntry() {
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
-const calculateCalories = (e) => {
+function calculateCalories(e) {
   e.preventDefault();
   isError = false;
 
   const breakfastNumberInputs = document.querySelectorAll(
     "#breakfast input[type=number]"
   );
-
   const lunchNumberInputs = document.querySelectorAll(
     "#lunch input[type=number]"
   );
-
   const dinnerNumberInputs = document.querySelectorAll(
     "#dinner input[type=number]"
   );
-
   const snacksNumberInputs = document.querySelectorAll(
     "#snacks input[type=number]"
   );
-
   const exerciseNumberInputs = document.querySelectorAll(
     "#exercise input[type=number]"
   );
@@ -60,7 +56,6 @@ const calculateCalories = (e) => {
   const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
   const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
   const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
-
   const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 
   if (isError) {
@@ -69,14 +64,17 @@ const calculateCalories = (e) => {
 
   const consumedCalories =
     breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
-
   const remainingCalories =
     budgetCalories - consumedCalories + exerciseCalories;
-
   const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
+  output.innerHTML = `
+  <span class="${surplusOrDeficit.toLowerCase()}"></span>
+  `;
 
-  output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}"></span>`;
-};
+  output.innerHTML = `
+  <span class="${surplusOrDeficit.toLowerCase()}">${remainingCalories} Calorie ${surplusOrDeficit}</span>
+  `;
+}
 
 const getCaloriesFromInputs = (list) => {
   let calories = 0;
