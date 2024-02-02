@@ -111,6 +111,8 @@ const clearForm = () => {
   }
 
   budgetNumberInput.value = "";
+
+  output.innerText = "";
 };
 addEntryButton.addEventListener("click", addEntry);
 calorieCounter.addEventListener("submit", calculateCalories);
