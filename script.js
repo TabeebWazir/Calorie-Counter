@@ -101,6 +101,8 @@ const getCaloriesFromInputs = (list) => {
   return calories;
 };
 
-const clearForm = () => {};
+const clearForm = () => {
+  const inputContainers = document.querySelectorAll(".input-container");
+};
 addEntryButton.addEventListener("click", addEntry);
 calorieCounter.addEventListener("submit", calculateCalories);
